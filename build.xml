@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="Grazitti_Framework_Version3">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="D:\eclipse-jee-indigo-win32\eclipse"/>
+    <property name="junit.output.dir" value="Reports"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Grazitti_Framework_Version3.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/jxl.jar"/>
+        <pathelement location="lib/log4j.jar"/>
+        <pathelement location="lib/commons-logging-1.1.jar"/>
+        <pathelement location="lib/dom4j-1.6.1.jar"/>
+        <pathelement location="lib/junit-3.8.1.jar"/>
+        <pathelement location="lib/pdfbox-app-1.7.1.jar"/>
+        <pathelement location="lib/poi-3.8-20120326.jar"/>
+        <pathelement location="lib/poi-examples-3.8-20120326.jar"/>
+        <pathelement location="lib/poi-excelant-3.8-20120326.jar"/>
+        <pathelement location="lib/poi-ooxml-3.8-20120326.jar"/>
+        <pathelement location="lib/poi-ooxml-schemas-3.8-20120326.jar"/>
+        <pathelement location="lib/poi-scratchpad-3.8-20120326.jar"/>
+        <pathelement location="lib/selenium-java-2.25.0-srcs.jar"/>
+        <pathelement location="lib/selenium-java-2.25.0.jar"/>
+        <pathelement location="lib/selenium-server-standalone-2.25.0.jar"/>
+        <pathelement location="lib/xmlbeans.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="CheckDeleteCookieTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.TestScripts.CheckDeleteCookieTest" todir="${junit.output.dir}"/>
+            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+        </junit>
+    </target>
+    <target name="DragDropTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.TestScripts.DragDropTest" todir="${junit.output.dir}"/>
+            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+        </junit>
+    </target>
+    <target name="ImageComparisonTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.TestScripts.ImageComparisonTest" todir="${junit.output.dir}"/>
+            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+        </junit>
+    </target>
+    <target name="PdfTextComparisonTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.TestScripts.PdfTextComparisonTest" todir="${junit.output.dir}"/>
+            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+        </junit>
+    </target>
+    <target name="RegistrationTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.TestScripts.RegistrationTest" todir="${junit.output.dir}"/>
+            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+        </junit>
+    </target>
+    <target name="SortingTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.TestScripts.SortingTest" todir="${junit.output.dir}"/>
+            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+        </junit>
+    </target>
+    <target name="WriteAndDownloadTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.TestScripts.WriteAndDownloadTest" todir="${junit.output.dir}"/>
+            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+        </junit>
+    </target>
+	  <target name="TestSuite">
+	        <mkdir dir="${junit.output.dir}"/>
+	        <junit fork="yes" printsummary="withOutAndErr">
+	            <formatter type="xml"/>
+	            <test name="com.TestScripts.RegistrationTest" todir="${junit.output.dir}"/>
+	        	<test name="com.TestScripts.WriteAndDownloadTest" todir="${junit.output.dir}"/>
+	            <classpath refid="Grazitti_Framework_Version3.classpath"/>
+	        </junit>
+	    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

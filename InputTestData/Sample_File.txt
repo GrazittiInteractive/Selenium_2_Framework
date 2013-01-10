@@ -1,0 +1,54 @@
+FRAMEWORK OVERVIEW
+Setting up Selenium Automation for the first time or running it for separate
+web applications, you will require some bit of study to get started. You can
+read up a lot of documentation, experiment with scripts, and repeat the
+process every time your
+testing object changes. Or you can simply use our Selenium 2 (Webdriver)
+Framework.
+This Selenium 2 (Webdriver) Framework is a set of guidelines, including
+coding standards, test-data handling, object repository treatment etc.,
+which when followed will not only save precious time but will also provide
+additional benefits including increased code re-usage, higher portability,
+and reduced script maintenance cost.
+Our Approach
+For our framework we have used ‘Data-Driven Framework’ with Selenium 2
+(Webdriver) and Java Programming
+language.
+A data-driven framework is where test input and output values are read
+from data files (ODBC sources, CVS files, Excel files and DAO objects) and
+are loaded into variables in captured or manually coded scripts.
+In this framework, variables are used for both input values and output
+verification values. Navigation through the program, reading of the data
+files, and logging of test status and information are all coded in the test
+script.
+Framework Features
+-Well defined architectural design
+-Less time to test large data
+-Script execution in multiple environments
+-Easier, faster and efficient analysis of result logs
+-Communication of results
+-Easy debugging and script maintenance
+-Robust and stable due to error and exception handling
+-100% reliability of utility scripts, online execution, report packs
+FRAMEWORK ARCHITECTURE DESIGN
+Architecture forms the foundation of any software application. It should be
+robust enough to handle the desired functions
+efficiently and effectively. In this approach, the goal is to develop an
+application-independent reusable Data-Driven Framework that can be used
+directly across any application without spending any extra time on it.
+In order to make all the components of the system work in sync, it is
+important to define the components and its
+functionalities, as well as the binding relationship between them.
+This Package Includes:
+a) Config - Keeps all the configuration files such as property files
+b) InputTestData - Has files containing input data for application
+c) OutputData - Contains downloaded docs/images, fetched data in
+excel
+d) TestReports - Contains ANT generated reports
+e) Util - Utility package contains all generic functions & business
+functions such as email configuration setting
+and all other utilities
+f) TestLogs - Contains log file corresponding to tests
+g) DAO - Classes for accessing persistent storage, such as to a
+database
+h) Pages - Page classes for particular pages

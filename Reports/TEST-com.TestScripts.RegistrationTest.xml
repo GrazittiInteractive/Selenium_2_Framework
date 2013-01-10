@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="hp" name="com.TestScripts.RegistrationTest" tests="1" time="14.954" timestamp="2012-12-06T12:48:52">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="eclipse.pdebuild.templates" value="/D:/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/templates/" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="env.PROMPT" value="$P$G" />
+    <property name="os.name" value="Windows Vista" />
+    <property name="env.FP_NO_HOST_CHECK" value="NO" />
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.6.0\jre\classes" />
+    <property name="env.COMPUTERNAME" value="HP" />
+    <property name="env.CommonProgramW6432" value="C:\Program Files\Common Files" />
+    <property name="env.ALLUSERSPROFILE" value="C:\ProgramData" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="D:\eclipse-jee-indigo-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300" />
+    <property name="java.runtime.version" value="1.6.0-b105" />
+    <property name="env.HOMEPATH" value="\Users\Master" />
+    <property name="user.name" value="Master" />
+    <property name="user.language" value="en" />
+    <property name="env.windows_tracing_flags" value="3" />
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\bin" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="Grazitti_Framework_Version3" />
+    <property name="java.version" value="1.6.0" />
+    <property name="env.PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 58 Stepping 9, GenuineIntel" />
+    <property name="user.timezone" value="" />
+    <property name="env.TEMP" value="C:\Users\Master\AppData\Local\Temp" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\endorsed" />
+    <property name="env.PROCESSOR_ARCHITEW6432" value="AMD64" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="env.HOMEDRIVE" value="C:" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ECLIPSE_HOME" value="D:\eclipse-jee-indigo-win32\eclipse" />
+    <property name="file.separator" value="\" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="50.0" />
+    <property name="user.country" value="US" />
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.6.0\jre" />
+    <property name="env.PSModulePath" value="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\" />
+    <property name="env.APPDATA" value="C:\Users\Master\AppData\Roaming" />
+    <property name="env.PUBLIC" value="C:\Users\Public" />
+    <property name="env.windows_tracing_logfile" value="C:\BVTBin\Tests\installpackage\csilogfile.log" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="env.ComSpec" value="C:\Windows\system32\cmd.exe" />
+    <property name="env.OS" value="Windows_NT" />
+    <property name="env.CommonProgramFiles" value="C:\Program Files (x86)\Common Files" />
+    <property name="ant.file" value="D:\webdriver_c\Grazitti_Framework_Version3\build.xml" />
+    <property name="os.version" value="6.1" />
+    <property name="env.ProgramW6432" value="C:\Program Files" />
+    <property name="path.separator" value=";" />
+    <property name="java.vm.version" value="1.6.0-b105" />
+    <property name="env.USERPROFILE" value="C:\Users\Master" />
+    <property name="user.variant" value="" />
+    <property name="ant.library.dir" value="D:\eclipse-jee-indigo-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib" />
+    <property name="junit.output.dir" value="Reports" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="env.TMP" value="C:\Users\Master\AppData\Local\Temp" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="eclipse.pdebuild.scripts" value="/D:/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/scripts/" />
+    <property name="user.home" value="C:\Users\Master" />
+    <property name="target" value="1.6" />
+    <property name="env.ProgramData" value="C:\ProgramData" />
+    <property name="env.SESSIONNAME" value="Console" />
+    <property name="env.ProgramFiles(x86)" value="C:\Program Files (x86)" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.NUMBER_OF_PROCESSORS" value="4" />
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/jdk1.6.0/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.6.0/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.6.0/bin/../jre/lib/i386;C:\Program Files (x86)\Java\jre1.6.0\lib\;C:\Program Files (x86)\Java\jdk1.6.0\bin\; C:\Users\Master\Downloads\apache-ant-1.8.4-bin\apache-ant-1.8.4\bin;;D:\eclipse-jee-indigo-win32\eclipse;" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="java.class.path" value="D:\webdriver_c\Grazitti_Framework_Version3\bin;D:\webdriver_c\Grazitti_Framework_Version3\lib\jxl.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\log4j.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\commons-logging-1.1.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\dom4j-1.6.1.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\junit-3.8.1.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\pdfbox-app-1.7.1.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\poi-3.8-20120326.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\poi-examples-3.8-20120326.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\poi-excelant-3.8-20120326.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\poi-ooxml-3.8-20120326.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\poi-ooxml-schemas-3.8-20120326.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\poi-scratchpad-3.8-20120326.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\selenium-java-2.25.0-srcs.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\selenium-java-2.25.0.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\selenium-server-standalone-2.25.0.jar;D:\webdriver_c\Grazitti_Framework_Version3\lib\xmlbeans.jar;D:\eclipse-jee-indigo-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-launcher.jar;D:\eclipse-jee-indigo-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar;D:\eclipse-jee-indigo-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit.jar;D:\eclipse-jee-indigo-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="env.windir" value="C:\Windows" />
+    <property name="env.LOGONSERVER" value="\\HP" />
+    <property name="env.PROCESSOR_ARCHITECTURE" value="x86" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.os.patch.level" value="Service Pack 1" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.ProgramFiles" value="C:\Program Files (x86)" />
+    <property name="env.ANT_HOME" value="D:\eclipse-jee-indigo-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300" />
+    <property name="java.io.tmpdir" value="C:\Users\Master\AppData\Local\Temp\" />
+    <property name="env.PROCESSOR_REVISION" value="3a09" />
+    <property name="eclipse.pdebuild.home" value="/D:/eclipse-jee-indigo-win32/eclipse/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/./" />
+    <property name="env.CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="env.SystemRoot" value="C:\Windows" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="os.arch" value="x86" />
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.6.0\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="user.dir" value="D:\webdriver_c\Grazitti_Framework_Version3" />
+    <property name="env.LOCALAPPDATA" value="C:\Users\Master\AppData\Local" />
+    <property name="ant.file.type.Grazitti_Framework_Version3" value="file" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="env.PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+    <property name="env.Path" value="C:/Program Files (x86)/Java/jdk1.6.0/bin/../jre/bin/client;C:/Program Files (x86)/Java/jdk1.6.0/bin/../jre/bin;C:/Program Files (x86)/Java/jdk1.6.0/bin/../jre/lib/i386;C:\Program Files (x86)\Java\jre1.6.0\lib\;C:\Program Files (x86)\Java\jdk1.6.0\bin\; C:\Users\Master\Downloads\apache-ant-1.8.4-bin\apache-ant-1.8.4\bin;;D:\eclipse-jee-indigo-win32\eclipse;" />
+    <property name="org.apache.tools.ant.taskdefs.optional.junit.AggregateTransformer0" value="C:\Users\Master\AppData\Local\Temp\null1222538160" />
+    <property name="basedir" value="D:\webdriver_c\Grazitti_Framework_Version3" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="D:\eclipse-jee-indigo-win32\eclipse\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar" />
+    <property name="env.USERNAME" value="Master" />
+    <property name="env.SystemDrive" value="C:" />
+    <property name="source" value="1.6" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="env.USERDOMAIN" value="HP" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="ant.project.invoked-targets" value="build,junitreport,RegistrationTest" />
+    <property name="ant.file.Grazitti_Framework_Version3" value="D:\webdriver_c\Grazitti_Framework_Version3\build.xml" />
+    <property name="env.PROCESSOR_LEVEL" value="6" />
+  </properties>
+  <testcase classname="com.TestScripts.RegistrationTest" name="testValidRegister" time="14.853" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager).
+log4j:WARN Please initialize the log4j system properly.
+]]></system-err>
+</testsuite>
