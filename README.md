@@ -1,3 +1,8 @@
+Selenium 2 Test Automation Framework 
+By Grazitti Interactive
+
+Version 3.0
+
 ====================
 FRAMEWORK OVERVIEW
 ====================
@@ -52,6 +57,121 @@ TestLogs - Contains log file corresponding to tests
 DAO - Classes for accessing persistent storage, such as to a database
 Pages - Page classes for particular pages
 
+Understanding of Page Object Model
+------------------------------------------
+Page Object Pattern
+- A simple design pattern that models each page (or page chunk) as a class object that other classes / objects can interact with
+- A very common pattern for implementing an automation framework using Selenium 2 (Webdriver)
+- Classes representing pages / chunks should provide the services that a user would execute on the page
+
+Test Script: RegistrationTest.java
+-------------------------------------------
+Lets us take a look at our RegistrationTest:
+
+public class RegistrationTest extends DBCon{
+static Logger log = Logger.getLogger(RegistrationTest.class.getName());
+private StringBuffer verificationErrors = new StringBuffer();
+DBCon dbConnection = new DBCon();
+private RegisterPage _register;
+ArrayList<UsersListBean> usersList;
+@Before
+public void setUp() throws Exception {
+super.setUp(getBrowser());
+PropertyConfigurator.configure(“config/log4j.properties”);
+usersList = dbConnection.loadDataFromExcel();
+_register = PageFactory.initElements(_driver, RegisterPage.class);
+}
+
+@Test
+public void testValidRegister() throws Exception {
+assert !_users.isEmpty();
+// Open URL in browser
+_register.navigateToPageAndWait();
+// Verify that bottom navigation is present on this page
+BottomNavigationPanel bottomNav = new BottomNavigationPanel(_driver);
+assertTrue(bottomNav.isNavPresent());
+for (int i = 0; i < usersList.size(); i++) {
+try {
+ThankYouPage thankYouPage = new ThankYouPage(_driver);
+// Register into the site
+// Parameterization of different input fields - text boxes, radio button, check boxes, drop downs,
+// file upload, etc
+// Also parameterization of auto-suggest search drop downs
+// Please mention the location of the file to download in the input excel sheet
+thankYouPage = _register.validRegistration(usersList, i);
+// Verify that welcome message appears correctly
+assertEquals(“Welcome “+usersList.get(i).getFirstName(),thankYouPage.assertUserGreeting());
+//Verify that logout link is displayed
+assertTrue(thankYouPage.checkLogoutLink());
+// Verify that correct first name is displayed
+assertEquals(usersList.get(i).getFirstName(),thankYouPage.assertFirstName());
+// Verify that correct last name is displayed
+assertEquals(usersList.get(i).getLastName(),thankYouPage.assertLastName());
+// Verify that correct phone number is displayed
+assertEquals(usersList.get(i).getPhoneNumber(),thankYouPage.assertPhoneNumber());
+// Verify that correct gender is displayed
+assertEquals(usersList.get(i).getGender(),thankYouPage.assertGender());
+// Verify that correct industry is displayed
+assertEquals(usersList.get(i).getIndustry(),thankYouPage.assertIndustry());
+// Verify that correct country is displayed
+assertEquals(usersList.get(i).getCountry(),thankYouPage.assertCountry());
+log.info(“User “+usersList.get(i).getFirstName()+” has registered successfully”);
+} catch (AssertionError ex) {
+log.error(“Value does not match”, ex);
+}
+// Logout from site
+_register.logout();
+}
+}
+@After
+public void tearDown() throws Exception {
+_driver.quit();
+String verificationErrorString = verificationErrors.toString();
+if (!””.equals(verificationErrorString)) {
+fail(verificationErrorString);
+}
+}
+}
+
+Retrieving Data From DataBase
+------------------------------------------
+RegisterTest extends DBCon class having function loadDataFromExcel() retrieving data from excel sheet which further extends
+GUI_automation_base class setting up the browser to be used as mentioned in gui_automation.properties in config folder.
+
+Logs:
+-------------------------------------------
+Initialize the logger for getting logs with: static Logger log = Logger.getLogger(RegisterTest.class.getName());
+
+Setup Function:
+-------------------------------------------
+In setup() function call the GUI_automation_base setup() function by getting the browser from gui_automation.properties in
+config folder, configure the log4j.properties file, load the data from excel sheet and initialize the RegisterPage instance.
+
+Rules for Automation Framework
+--------------------------------------------
+- Methods performing an action that results into other page should return the page object to user. Assert and wait to load
+the page completely with all elements of the page.
+Example: Clicking a button on page A redirects the user to page B, then returns the object of page A
+
+- Naming of variables and methods:
+a. Standard JAVA naming conventions should be utilized
+b. If a method performs an action that clicks on any element on the page, the name of the method should start with click
+c. If a method retrieves any value or entity, or a list of values or entities, the method name should start with get
+d. If a method assigns a value to a web element, the method name should start with set
+e. If a method interacts with radio or check-boxes it should start with enable or disable
+f. Instance variables should be named using an underscore as a leading character. Example: _register, _pageName 
+
+- Encapsulation should be used as follow:
+a. All methods intended for the implementation of tests for the automation of the web project, should be public
+b. All methods not intended for the implementation of tests should be private
+c. All variables, with the exception of enums, should be private
+
+- Common methods for similar web elements:
+a. Lists (HTML tables): getAll* or getAll*ByName, find*ByName, click*_ByName
+b. List-boxes: getAll*Options or getAll*Options_ByText, click*Option
+
+- All assertions and verifications should be within the tests using JUnit framework asserts
+
 Some amazing and distinct features
 -------------------------------------------
 Selenium 2 (Webdriver) Framework Version 3 has all new features, which will make testing a whole lot easier. Key new features
@@ -99,3 +219,8 @@ using webdriver’s “switchTo” method.
 7) Check and Delete Cookies:
 Webdriver has amazing feature of cookie handling that we have used in our framework to check and delete cookies
 for a specific domain.
+
+Conclusion
+------------------------------------
+A robust framework helps keep pace with agile software delivery and maximize on the benefit of Selenium automation testing.
+It drives productivity and facilitates code reuse ultimately enhancing the quality of resulting software.
