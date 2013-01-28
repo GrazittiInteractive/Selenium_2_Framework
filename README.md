@@ -47,15 +47,15 @@ functionalities, as well as the binding relationship between them.
 
 This Package Includes:
 
-Config - Keeps all the configuration files such as property files
-InputTestData - Has files containing input data for application
-OutputData - Contains downloaded docs/images, fetched data in excel
-TestReports - Contains ANT generated reports
-Util - Utility package contains all generic functions & business functions such as email configuration setting
+-Config - Keeps all the configuration files such as property files
+-InputTestData - Has files containing input data for application
+-OutputData - Contains downloaded docs/images, fetched data in excel
+-TestReports - Contains ANT generated reports
+-Util - Utility package contains all generic functions & business functions such as email configuration setting
 and all other utilities
-TestLogs - Contains log file corresponding to tests
-DAO - Classes for accessing persistent storage, such as to a database
-Pages - Page classes for particular pages
+-TestLogs - Contains log file corresponding to tests
+-DAO - Classes for accessing persistent storage, such as to a database
+-Pages - Page classes for particular pages
 
 Understanding of Page Object Model
 ------------------------------------------
