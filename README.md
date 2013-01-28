@@ -13,7 +13,7 @@ Selenium 2 (Webdriver) Framework
 Setting up Selenium Automation for the first time or running it for separate web applications, you will require some bit of study
 to get started. You can read up a lot of documentation, experiment with scripts, and repeat the process every time your
 testing object changes. Or you can simply use our Selenium 2 (Webdriver) Framework.
-This Selenium 2 (Webdriver) Framework is a set of guidelines, including coding standards, test-data handling, object repository
+This <a href="http://www.grazitti.com/resources/tools/selenium-2-framework">Selenium 2 (Webdriver) Framework</a> is a set of guidelines, including coding standards, test-data handling, object repository
 treatment etc., which when followed will not only save precious time but will also provide additional benefits including increased
 code re-usage, higher portability, and reduced script maintenance cost.
 
