@@ -1,5 +1,5 @@
 Selenium 2 Test Automation Framework 
-By Grazitti Interactive
+<a href = "http://www.grazitti.com">By Grazitti Interactive</a>
 
 Version 3.0
 
@@ -19,7 +19,7 @@ code re-usage, higher portability, and reduced script maintenance cost.
 
 Our Approach
 -------------------------------------
-For our framework we have used ‘Data-Driven Framework’ with Selenium 2 (Webdriver) and Java Programming
+For <a href="http://www.grazitti.com/resources/tools/selenium-2-framework">our framework</a> we have used ‘Data-Driven Framework’ with Selenium 2 (Webdriver) and Java Programming
 language.
 A data-driven framework is where test input and output values are read from data files (ODBC sources, CVS files, Excel files
 and DAO objects) and are loaded into variables in captured or manually coded scripts.
